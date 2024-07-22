@@ -6,10 +6,10 @@ content-type: reference
 topic-tags: installing
 discoiquuid: c9342c28-8289-4831-a613-4bc03431f557
 exl-id: 582f10bb-60d2-46ed-b81d-5818a040edc6
-source-git-commit: 28137f26afc024d411857d44887bf69fe1ee2b81
+source-git-commit: 3b6a686966fb8d006bed8cc4a4bf5eebe0dfb030
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 100%
+source-wordcount: '1010'
+ht-degree: 73%
 
 ---
 
@@ -21,7 +21,11 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->이 문서에서는 Microsoft Office용 Adobe Experience Manager Document Security, Microsoft Office용 Adobe Experience Manager Document Security Extension 및 Microsoft Office용 Document Security Extension이라는 용어를 같은 의미로 사용합니다.
+>이 문서에서는 다음과 같은 용어를 서로 교환하여 사용합니다.
+>
+>* Microsoft Office용 Adobe Experience Manager Document Security
+>* Microsoft Office용 Adobe Experience Manager 문서 보안 확장
+>* Microsoft Office용 문서 보안 확장
 
 ## Microsoft Office용 AEM Document Security Extension 설치 및 구성 {#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
 
@@ -31,13 +35,13 @@ Microsoft Office용 AEM Document Security Extension을 설치하기 전에 이 �
 
 ## 해결된 문제 {#fixed-issues}
 
-* 문자열이 세로로 표시되고 잘못된 줄 바꿈이 내용에 추가됩니다. (Ref# CQ-4201054)
+* 문자열이 세로로 표시되고 잘못된 줄 바꿈이 내용에 추가됩니다. (CQ-4201054)
 
 ## 알려진 문제 {#known-issues}
 
 ### 서드파티 플러그인이 지원되지 않음 {#third-party-plug-ins-not-supported}
 
-Microsoft Office용 AEM Document Security Extension은 서드파티 플러그인에서 작동하지 않습니다. Microsoft Office용 Document Security Extension을 설치하기 전에 Microsoft Office용 서드파티 플러그인을 제거하십시오.
+Microsoft Office용 AEM Document Security Extension은 서드파티 플러그인에서 작동하지 않습니다. Microsoft Office용 Document Security Extension을 설치하기 전에 Microsoft Office용 서드 파티 플러그인을 제거하십시오.
 
 ### Microsoft Word, Excel 및 PowerPoint에서 비활성화된 메뉴 옵션 {#disabled-menu-options-in-microsoft-word-excel-and-powerpoint}
 
@@ -72,7 +76,7 @@ Microsoft Office에서는 보호된 세션 중에 다음 옵션을 사용할 수
 
 ### SharePoint Server에서 보호된 문서 열기 {#opening-a-protected-document-from-sharepoint-server}
 
-보호된 문서 열기: Microsoft Word, Microsoft Excel, Microsoft PowerPoint 등 파일 형식과 관련된 Microsoft Office 프로그램을 먼저 열지 않고 SharePoint Server로부터 Microsoft Office용 Document Security Extension에서 보호된 문서를 열려고 하면 문서가 열리지 않을 수 있습니다. 해당 플러그인을 설치했음을 나타내는 오류 메시지가 표시됩니다. 따라서 SharePoint Server의 Microsoft Office용 Document Security Extension에서 보호된 문서를 열기 전에 관련 Microsoft Office 프로그램을 여는 것이 좋습니다.
+SharePoint Server로부터 Microsoft Office용 Document Security Extension에서 보호된 문서를 열려면 먼저 연관된 Microsoft Office 프로그램(Word, Excel 또는 PowerPoint)을 여십시오. 그렇지 않으면 문서가 열리지 않을 수 있습니다. 해당 플러그인을 설치했음을 나타내는 오류 메시지가 표시됩니다. 따라서 SharePoint Server의 Microsoft Office용 Document Security Extension에서 보호된 문서를 열기 전에 관련 Microsoft Office 프로그램을 여는 것이 좋습니다.
 
 (선택 사항) SharePoint Server로부터 Microsoft Office용 Document Security Extension에서 보호된 문서를 열기 전에 캐시 폴더를 지우는 것이 좋습니다.
 
@@ -80,7 +84,7 @@ SharePoint Server로부터 보호된 문서를 열면 적용된 정책에 관계
 
 ### 프린터가 설치되지 않은 상태에서 Microsoft Excel 2013, Microsoft Excel 2016 및 Microsoft Excel 2019 파일에 동적 워터마크가 포함된 정책 적용 {#apply-a-policy-with-a-dynamic-watermark-to-microsoft-excel-microsoft-excel-and-microsoft-excel-file-with-no-printer-installed}
 
-프린터가 설치되지 않은 컴퓨터에서 Microsoft Excel 2013, Microsoft Excel 2016 및 Microsoft Excel 2019 파일에 동적 워터마크가 포함된 정책을 적용한 다음 파일을 저장하면 “동적 워터마크를 적용하는 동안 내부 오류가 발생했습니다”라는 오류가 나타납니다. 이 오류는 보호된 파일을 다시 열 때도 나타납니다. 워터마크가 적용되지 않으며 보기 > 페이지 레이아웃에서 워터마크를 볼 수 없습니다.
+프린터가 설치되지 않은 컴퓨터에서 Excel 2013, 2016 또는 2019 파일에 동적 워터마크가 포함된 정책을 적용하면 &quot;동적 워터마크를 적용하는 동안 내부 오류가 발생했습니다&quot;라는 오류가 발생합니다. 이 오류는 보호된 파일을 다시 열 때도 나타납니다. 워터마크가 적용되지 않으며 보기 > 페이지 레이아웃에서 워터마크를 볼 수 없습니다.
 
 ### 지원되는 Office 애플리케이션에 대한 Windows 데이터 실행 방지 비활성화 {#disable-windows-data-execution-prevention-for-supported-office-applications}
 
@@ -92,7 +96,7 @@ Document Security Extension을 사용하여 공유 Microsoft Office 파일을 �
 
 ### Microsoft Office용 Document Security Extension 및 McAfee VirusScan이 포함된 컴퓨터에서 Office 애플리케이션시작 {#starting-office-applications-on-a-machine-containing-document-security-extension-for-microsoft-office-and-mcafee-virusscan}
 
-Document Security가 설치되어 있고 실시간 검색이 활성화된 McAfee VirusScan이 있는 컴퓨터에서 Office 애플리케이션이 원활하게 시작되도록 하려면 McAfee VirusScan 콘솔에서 버퍼 오버플로 방지 옵션을 비활성화하십시오.
+Document Security와 McAfee VirusScan(실시간 검색 사용)이 있는 컴퓨터에서 Office 응용 프로그램을 원활하게 시작하려면 McAfee VirusScan 콘솔에서 버퍼 오버플로 방지 옵션을 비활성화하십시오.
 
 ### 지원되지 않는 Microsoft Office 언어를 사용하는 시스템에 Microsoft Office용 Document Security Extension 설치 {#installing-document-security-extension-for-microsoft-office-on-a-machine-with-an-unsupported-microsoft-office-language}
 
@@ -104,7 +108,7 @@ Document Security가 설치되어 있고 실시간 검색이 활성화된 McAfee
 
 ### Microsoft Office 체험판이 지원되지 않음 {#no-support-for-trial-versions-of-microsoft-office}
 
-Microsoft Office용 Document Security는 Microsoft Office의 체험판을 지원하지 않습니다. 확장을 설치하기 전에 라이선스가 있는 Microsoft Office 사본을 설치했고 활성화되어 있는지 확인하십시오.
+Microsoft Office용 Document Security Extension은 Microsoft Office의 추적 버전을 지원하지 않습니다. 확장을 설치하기 전에 Microsoft Office의 라이선스가 있는 사본을 설치했고 활성화되어 있는지 확인하십시오.
 
 ### 보호된 Microsoft Office 파일을 열 수 없음 {#unable-to-open-a-protected-microsoft-office-files}
 
@@ -112,14 +116,14 @@ Microsoft Office의 보호된 보기가 활성화된 경우 Right Management Ext
 
 ### 이미지 또는 배경색이 포함된 Microsoft Excel 문서의 셀이 워터마크 위에 나타남 {#cells-of-microsoft-excel-document-containing-an-image-or-background-color-appear-on-top-of-watermark}
 
-Microsoft Excel 문서의 셀이 이미지를 포함하고 있거나 배경색으로 채워져 있고 동적 워터마크 정책이 문서에 적용된 경우 셀에 채워진 이미지 또는 배경색이 워터마크 위에 나타나고 워터마크를 덮습니다.
+Excel 문서의 셀에 이미지 또는 배경색이 있는 경우 동적 워터마크가 적용되면 이미지 또는 색상이 워터마크를 덮습니다. 이 접근법은 워터마크가 셀에서 이미지 또는 배경색에 의해 가려진다는 것을 의미한다.
 
 ### 여러 인증서의 사용성 문제 {#usability-issue-with-multiple-certificates}
 
-클라이언트 컴퓨터에 여러 인증서가 있고 사용자가 인증서 선택 대화 상자를 취소하면 대화 상자가 다시 한 번 나타나고 사용자는 대화 상자를 두 번 취소해야 합니다.
+클라이언트 시스템에 인증서가 여러 개 있고 사용자가 인증서 선택 대화 상자를 취소하면 대화 상자가 다시 나타납니다. 대화 상자를 두 번 취소해야 합니다.
 
 ### Microsoft PowerPoint에서 보호된 문서 편집을 허용 {#microsoft-powerpoint-allows-editing-protected-documents}
 
-보호된 문서를 편집하려고 하면 Microsoft PowerPoint에서 “이 문서를 수정할 수 있는 권한이 없습니다. 변경 사항을 저장할 수 없습니다”라는 메시지가 표시됩니다. 메시지를 닫은 후에도 사용자는 계속해서 텍스트를 추가하거나 문서를 편집할 수 있습니다. 그러나 보호된 문서의 변경 사항은 저장되지 않습니다.
+보호된 문서를 편집하려고 하면 Microsoft PowerPoint에서 “이 문서를 수정할 수 있는 권한이 없습니다. 변경 사항을 저장할 수 없습니다.&quot; 메시지를 닫은 후에도 사용자는 계속해서 텍스트를 추가하거나 문서를 편집할 수 있습니다. 그러나 보호된 문서의 변경 사항은 저장되지 않습니다.
 
 위에서 언급한 동작은 PowerPoint 2013, PowerPoint 2016 및 PowerPoint 2019에서 예상되는 것과 같습니다.
