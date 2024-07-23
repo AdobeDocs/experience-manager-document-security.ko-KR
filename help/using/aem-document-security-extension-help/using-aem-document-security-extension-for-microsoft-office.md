@@ -5,9 +5,9 @@ uuid: 8d98a355-df25-4d8e-ae76-a63a93f280c4
 contentOwner: dhv
 discoiquuid: df6ca960-ccfb-411a-b61d-d52bce0725a7
 source-git-commit: 8a10fb9fa24409b695fdaf1431228c6281bf78c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '121'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 84%
 >
 >[Microsoft Office용 AEM Document Security Extension 소개](../document-security-extension-microsoft-office.md) {#introduction-to-aem-document-security-extension-for-microsoft-office}
 >
->Microsoft Office용 Document Security Extension을 사용하면 Microsoft Office 파일에 사전 정의된 기밀 유지 설정을 적용할 수 있습니다.
+>Microsoft Office용 Document Security Extension을 사용하면 미리 정의된 기밀 유지 설정을 Microsoft Office 파일에 적용할 수 있습니다.
 
 >[!NOTE]
 >
