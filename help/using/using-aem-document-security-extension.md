@@ -7,9 +7,9 @@ topic-tags: using
 discoiquuid: f4c2460c-174f-4e4d-b804-1eb051d2781e
 exl-id: 667a9718-b865-4911-96c2-7c08f75e0732
 source-git-commit: 6cf19ed9439e5be5a4c2e2fa2458879f37c25b96
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6136'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Microsoft® Office용 Document Security Extension을 사용하여 다음 작업�
 
 파일을 보호하거나 보호된 파일을 관리하는 데 사용할 서버를 기본 서버로 설정합니다. 새 파일에 정책을 적용하거나 Document Security 웹 페이지를 열면 Microsoft® Office용 Document Security Extension이 기본 서버에 연결됩니다. 둘 이상의 Document Security 인스턴스를 사용하여 파일을 보호하는 경우 서버 간 전환할 때 기본 서버 설정을 변경해야 합니다. 파일을 열 수 있는 권한이 있는 한 문서 보안 인스턴스로 보호되는 파일을 열 수 있습니다.
 
-Document Security 서버가 인증서 기반 인증을 사용하는 경우 로컬 컴퓨터에서 받은 인증서를 설치해야 합니다. 인증서 인증을 선택하고 인증에 사용할 인증서를 제공해야 합니다.
+Document Security 서버가 인증서 기반 인증을 사용하는 경우 로컬 컴퓨터에서 받은 인증서를 설치해야 합니다. 인증서 인증을 선택하고 인증에 사용하려는 인증서를 제공해야 합니다.
 
 하나의 Microsoft® Office 애플리케이션에서 Document Security 인스턴스에 대한 연결 설정을 구성하면 모든 Word, Excel 및 PowerPoint에 대해 구성됩니다.
 
@@ -72,11 +72,11 @@ Document Security 서버가 인증서 기반 인증을 사용하는 경우 로�
 
 >[!NOTE]
 >
->서버에 연결할 수 없는 경우 Internet Explorer에서 Document Security 웹 페이지를 열어 보십시오. Internet Explorer를 사용하여 서버에 연결할 수 없거나 대화 상자에 서버 인증서에 대한 경고가 표시되면 Microsoft® Office용 Document Security Extension이 서버에 연결할 수 없습니다. 도움이 필요하면 서버 관리자에게 문의하십시오.
+>서버에 연결할 수 없는 경우 Internet Explorer에서 Document Security 웹 페이지를 열어보십시오. Internet Explorer를 사용하여 서버에 연결할 수 없거나 대화 상자에 서버 인증서에 대한 경고가 표시되면 Microsoft® Office용 Document Security Extension이 서버에 연결할 수 없습니다. 도움이 필요하면 서버 관리자에게 문의하십시오.
 
 >[!NOTE]
 >
->Document Security에 연결할 수 없는 경우 &quot;사용자 이름과 암호가 올바르지 않습니다. 구성 설정을 확인하고 다시 시도하십시오.&quot;라는 메시지가 나타납니다. 다른 이유로 연결할 수 없는 경우 이 메시지가 나타날 수 있습니다. 처음으로 서버에 연결하는 경우 서버 이름과 포트를 올바르게 설정했는지 확인하십시오.
+>Document Security에 연결할 수 없는 경우 “사용자 이름과 암호가 올바르지 않습니다. 구성 설정을 확인하고 다시 시도하십시오”라는 메시지가 표시됩니다. 다른 이유로 연결할 수 없는 경우 이 메시지가 나타날 수 있습니다. 처음으로 서버에 연결하는 경우 서버 이름과 포트를 올바르게 설정했는지 확인하십시오.
 
 #### 기본 서버 지정 {#specify-the-default-server}
 
@@ -91,14 +91,14 @@ Document Security 서버가 인증서 기반 인증을 사용하는 경우 로�
 AEM Forms Document Security와 함께 서드파티 인증 공급자를 사용할 수 있습니다. 이러한 인증 공급자는 보호된 문서에 추가 액세스 계층을 추가하는 데 도움이 됩니다. AEM Forms Document Security는 다음과 같은 확장 인증 워크플로를 지원합니다.
 
 * 기본 AEM Forms URL을 사용한 확장 인증
-* 사용자 지정 URL을 사용한 확장 인증
+* 사용자 정의 URL을 사용한 확장 인증
 * JEE 서버의 AEM Forms에 구성된 서드파티 ID 공급자를 사용하는 기본 확장 인증 워크플로
-* JEE 서버의 AEM Forms에 구성된 서드파티 ID 공급자를 사용하는 사용자 지정 확장 인증 워크플로
-* SAML 인증을 나열하기 위해 사용자 지정된 페이지를 사용한 확장 인증
+* JEE 서버의 AEM Forms에 구성된 서드파티 ID 공급자를 사용하는 사용자 정의 확장 인증 워크플로
+* SAML 인증을 나열하기 위해 사용자 정의 페이지를 사용한 확장 인증
 
 #### 기본 AEM Forms URL을 사용한 확장 인증 {#extended-authentication-using-default-aem-forms-url}
 
-확장 인증에 기본 AEM Forms URL을 사용할 수 있습니다. 기본 랜딩 페이지에는 Adobe 브랜딩이 포함되어 있습니다. 또한 확장 인증에 기본 AEM Forms URL을 사용할 때 기본 AEM Forms 설정이 사용됩니다.
+확장 인증에 기본 AEM Forms URL을 사용할 수 있습니다. 기본 랜딩 페이지에는 Adobe 브랜딩이 포함되어 있습니다. 또한 확장 인증을 위해 기본 AEM Forms URL을 사용할 때 기본 AEM Forms 설정이 사용됩니다.
 
 기본 Adobe 랜딩 URL을 사용한 확장 인증을 활성화하려면 다음 단계를 수행하십시오.
 
@@ -111,36 +111,36 @@ AEM Forms Document Security와 함께 서드파티 인증 공급자를 사용할
 
    >[!NOTE]
    >
-   >URL에 정규화된 이름을 사용하십시오. Adobe은 HTTPS 프로토콜을 사용할 것을 권장합니다.
+   >URL에 정규화된 이름을 사용하십시오. Adobe에서는 HTTPS 프로토콜을 사용하는 것을 권장합니다.
 
-   이제 AEM Forms Document Security는 기본 AEM Forms 랜딩 URL을 사용한 확장 인증을 사용하도록 구성됩니다.
+   이제 AEM Forms 문서 보안은 기본 AEM Forms 랜딩 URL을 사용한 확장 인증을 사용하도록 구성됩니다.
 
    ![](assets/third-party-authentication.png)
 
-#### 사용자 지정 랜딩 URL을 사용한 확장 인증 {#extended-authentication-with-a-custom-landing-url}
+#### 사용자 정의 랜딩 URL을 사용한 확장 인증 {#extended-authentication-with-a-custom-landing-url}
 
-확장 인증에 사용자 지정 URL을 사용할 수 있습니다. 사용자 지정 브랜딩으로 사용자 지정 인증 페이지를 표시하는 유연성을 제공합니다. 예: 조직의 브랜딩.
+확장 인증에 사용자 정의 URL을 사용할 수 있습니다. 사용자 정의 브랜딩으로 사용자 정의 인증 페이지를 표시하는 유연성을 제공합니다. 예: 조직의 브랜딩.
 
-사용자 지정 인증 페이지를 war 파일로 패키징하고 war 파일을 AEM Forms 서버에 배포할 수 있습니다. war 파일에는 사용자 자격 증명을 수락하고 AEM Forms 서버에 대해 인증하기 위한 완전한 논리가 포함되어 있습니다. AEM Forms Document Security에는 사용자 지정 인증 페이지에 대한 다음 요구 사항이 있습니다.
+사용자 정의 인증 페이지를 war 파일로 패키징하고 war 파일을 AEM Forms 서버에 배포할 수 있습니다. war 파일에는 사용자 자격 증명을 수락하고 AEM Forms 서버에 대해 인증하기 위한 완전한 논리가 포함되어 있습니다. AEM Forms Document Security에는 사용자 정의 인증 페이지에 대한 다음 요구 사항이 있습니다.
 
 * 인증 페이지는 사용자 이름을 j_username으로, 암호를 j_password로 전송해야 합니다 페이지는 또한 source_url 및 login_url을 숨겨진 매개변수로 전송해야 합니다.
 * 인증에 성공하면 페이지가 자동으로 닫힙니다.
 
-사용자 지정 랜딩 URL을 사용한 확장 인증을 활성화하려면 다음과 같이 합니다.
+사용자 정의 랜딩 URL을 사용한 확장 인증을 활성화하려면 다음과 같이 합니다.
 
-1. 사용자 지정 인증 WAR 파일을 AEM Forms 서버에 배포합니다.
+1. 사용자 정의 인증 WAR 파일을 AEM Forms 서버에 배포합니다.
 1. AEM Forms 관리자 UI를 엽니다.
 1. 서비스 > 문서 보안 > 구성 > 서버 구성으로 이동합니다.
-1. 확장 인증 허용 옵션을 활성화하고 사용자 지정 확장 인증 랜딩 URL을 지정합니다.
-1. 항목 *&lt;node name=&quot;AllowedUrls&quot;>* 뒤에 SSO 노드의 `config.xml` 파일에 다음 항목을 추가하십시오.
+1. 확장 인증 허용 옵션을 활성화하고 사용자 정의 확장 인증 랜딩 URL을 지정합니다.
+1. *&lt;node name=&quot;AllowedUrls&quot;>* 항목 뒤에 SSO 노드 아래의 `config.xml` 파일에 다음 항목을 추가하십시오.
 
    >[!NOTE]
    >
-   >&lt;entry key=&quot;sso-l&quot; value=&quot;/ sample_/login.jsp&quot;/>`!!discoiqbr!!`&lt;entry key=&quot;sso-s&quot; value=&quot;/ sample_/welcome.jsp&quot;>`!!discoiqbr!!`&lt;entry key=&quot;sso-o&quot; value=&quot;/ sample_/logout.jsp&quot;/>`!!discoiqbr!!`
+   >&lt;entry key=&quot;sso-l&quot; value=&quot;/ sample_/login.jsp&quot;/>`!!discoiqbr!!`&lt;entry key=&quot;sso-s&quot; value=&quot;/ sample_/welcome.jsp&quot;>`!!discoiqbr!!`&lt;entry key=&quot;sso-o&quot; value=&quot;/ sample_/logout.jsp&quot;/>`!!discoiqbr!!`
 
-   onfig.xml 파일 업데이트에 대한 단계별 정보는 [문서 보안 구성 파일 수동 편집](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions#manually_editing_the_document_security_configuration_file)을 참조하십시오.
+   onfig.xml 파일 업데이트에 대한 단계별 정보는 [문서 보안 구성 파일 수동 편집](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions#manually_editing_the_document_security_configuration_file)을 참조하십시오.
 
-   이제 AEM Forms 문서 보안은 사용자 지정 랜딩 URL을 사용한 확장 인증을 사용하도록 구성됩니다.
+   이제 AEM Forms 문서 보안은 사용자 정의 랜딩 URL을 사용한 확장 인증을 사용하도록 구성됩니다.
 
 #### AEM Forms 서버에 구성된 서드파티 ID 공급자를 사용하는 기본 확장 인증 워크플로 {#default-extended-authentication-workflow-with-third-party-identity-providers-configured-on-aem-forms-server}
 
@@ -150,26 +150,26 @@ AEM Forms Document Security와 함께 서드파티 인증 공급자를 사용할
 
 Acrobat에서 보호된 문서를 열면 다음 화면이 표시됩니다.
 
-#### SAML 공급자가 AEM Forms 서버에 구성된 경우 사용자 지정 확장 인증 워크플로 {#custom-extended-authentication-workflow-when-saml-providers-are-configured-on-aem-forms-server}
+#### SAML 공급자가 AEM Forms 서버에 구성된 경우 사용자 정의 확장 인증 워크플로 {#custom-extended-authentication-workflow-when-saml-providers-are-configured-on-aem-forms-server}
 
 SAML 공급자가 AEM Forms 서버에 구성된 경우 랜딩 URL을 표시하기 전에 SAML 인증을 위해 구성된 모든 ID 공급자가 포함된 페이지가 표시됩니다.
 
-SAML 공급자가 AEM Forms 서버에 구성된 경우 사용자 지정 확장 인증 워크플로를 구성하기 위한 필수 조건은 다음과 같습니다.
+SAML 공급자가 AEM Forms 서버에 구성된 경우 사용자 정의 확장 인증 워크플로를 구성하기 위한 필수 조건은 다음과 같습니다.
 
 * SAML 인증이 AEM Forms 서버에서 구성되어 있습니다.
-* 사용자 지정 인증 페이지를 포함하며 사용자 자격 증명을 수락하고 AEM Forms 서버에 대해 인증하기 위한 완전한 논리를 포함하는 사용자 지정 war이 AEM Forms 서버에 배포됩니다.
+* 사용자 정의 인증 페이지를 포함하며 사용자 자격 증명을 수락하고 AEM Forms 서버에 대해 인증하기 위한 완전한 논리를 포함하는 사용자 정의 war이 AEM Forms 서버에 배포됩니다.
 
-#### SAML 인증을 나열하기 위해 사용자 지정 페이지 사용 {#using-custom-page-for-listing-saml-authentications}
+#### SAML 인증을 나열하기 위해 사용자 정의 페이지 사용 {#using-custom-page-for-listing-saml-authentications}
 
-AEM Forms 서버에 구성된 모든 인증 공급자를 포함하는 사용자 지정 페이지를 표시할 수도 있습니다 이러한 페이지를 만들려면 다음과 같이 합니다.
+AEM Forms 서버에 구성된 모든 인증 공급자를 포함하는 사용자 정의 페이지를 표시할 수도 있습니다 이러한 페이지를 만들려면 다음과 같이 합니다.
 
-1. 사용자 지정 인증 페이지를 war 파일로 패키징하고 war 파일을 AEM Forms 서버에 배포합니다. war 파일에는 사용자 자격 증명을 수락하고 AEM Forms 서버에 대해 인증하기 위한 완전한 논리가 포함되어 있습니다.
+1. 사용자 정의 인증 페이지를 war 파일로 패키징하고 war 파일을 AEM Forms 서버에 배포합니다. war 파일에는 사용자 자격 증명을 수락하고 AEM Forms 서버에 대해 인증하기 위한 완전한 논리가 포함되어 있습니다.
 1. AEM Forms 관리자 UI를 열고 **[!UICONTROL 설정]**> **[!UICONTROL 사용자 관리]** > **[!UICONTROL 구성]** > **[!UICONTROL SAML 서비스 공급자 설정]**&#x200B;으로 이동합니다.
-1. 사용자 지정 속성 필드에 다음을 추가하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+1. 사용자 정의 속성 필드에 다음을 추가하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
    *saml.sp.discovery.url=/demoJSP/saml_discovery.jsp*
 
-   이제 AEM Forms Document Security가 구성된 모든 인증 공급자가 포함된 사용자 지정 페이지를 표시하도록 구성되었습니다.
+   이제 AEM Forms Document Security는 구성된 모든 인증 공급자가 포함된 사용자 정의 페이지를 표시하도록 구성되었습니다.
 
 ### 사용자 계정 얻기 {#obtaining-a-user-account}
 
@@ -178,13 +178,13 @@ Document Security 계정이 아직 없는 경우 다음과 같은 이벤트가 �
 * 정책으로 보호된 파일을 보내려는 Document Security 사용자가 귀하를 정책에 추가합니다.
 * Document Security 관리자가 귀하의 계정을 생성합니다.
 
-계정을 등록하고 활성화한 후에는 정책을 통해 사용 권한이 부여된 정책으로 보호된 파일을 사용할 수 있습니다.
+계정을 등록하고 활성화한 후 정책을 통해 사용 권한이 부여된 정책 보호 파일을 사용할 수 있습니다.
 
 >[!NOTE]
 >
->정책으로 보호된 파일을 받았지만 Document Security 계정이 없는 경우 파일을 보낸 사람에게 도움을 요청하십시오. 마찬가지로, 등록 초대를 받은 경우 발신자에게 도움을 요청하십시오.
+>정책으로 보호된 파일을 받았지만 Document Security 계정이 없는 경우 파일을 보낸 사람에게 도움을 요청하십시오. 마찬가지로, 등록 초대를 받은 경우 초대를 보낸 사람에게 도움을 요청하십시오.
 
-Document Security에서 이메일 등록 초대를 받은 경우 이메일의 URL을 사용하여 온라인 등록 페이지를 열어 등록할 수 있습니다. 등록 후 계정 활성화에 대한 두 번째 알림을 받게 됩니다.
+Document Security에서 이메일 등록 초대를 받은 경우 이메일의 URL을 사용하여 온라인 등록 페이지를 열어 등록할 수 있습니다. 등록하면 계정 활성화에 대한 두 번째 알림을 받게 됩니다.
 
 #### 외부 사용자 계정 얻기 {#obtain-an-external-user-account}
 
@@ -200,7 +200,7 @@ Document Security에서 이메일 등록 초대를 받은 경우 이메일의 UR
 1. Document Security 등록 확인 이메일을 엽니다.
 1. 메시지에 나타나는 URL을 클릭합니다.
 1. 로그인 페이지 링크를 클릭합니다.
-1. **사용자 이름** 상자에 Document Security에 등록된 전자 메일 주소를 입력합니다. 이 이메일 주소는 기본 Document Security 사용자 이름입니다.
+1. **사용자 이름** 상자에 Document Security에 등록한 이메일 주소를 입력합니다. 이 이메일 주소는 기본 Document Security 사용자 이름입니다.
 1. **암호** 상자에 등록할 때 생성한 암호를 입력합니다.
 1. **로그인**&#x200B;을 클릭합니다.
 
@@ -323,17 +323,17 @@ Document Security 웹 페이지에서 정책을 만드는 데 사용할 수 있�
  </tbody>
 </table>
 
-정책 생성 및 관리에 대한 자세한 내용은 [Document Security 최종 사용자 도움말](https://help.adobe.com/en_US/AEMForms/6.1/RMHelp/)을 참조하십시오.
+정책 생성 및 관리에 대한 자세한 내용은 [Document Security 최종 사용자 도움말](https://help.adobe.com/ko_KR/AEMForms/6.1/RMHelp/)을 참조하십시오.
 
 ### 정책 적용 {#applying-policies}
 
 생성한 정책과 액세스 권한이 있는 정책 세트의 일부인 정책을 포함하여 사용 가능한 모든 정책을 파일에 적용할 수 있습니다. 정책을 적용하기 전에 파일을 저장해야 합니다.
 
-정책을 적용하면 가장 자주 사용하는 정책을 보다 쉽게 적용할 수 있도록 AEM Document Security 메뉴의 최근 사용 목록에 추가됩니다. 최근 사용 목록에는 다른 Document Security 인스턴스에 로그인하지 않은 경우 연결된 서버 또는 기본 서버에 대한 정책만 표시됩니다.
+정책을 적용하면 가장 자주 사용하는 정책을 보다 쉽게 적용할 수 있도록 AEM Document Security 메뉴의 최근 사용 목록에 추가됩니다. 연결된 서버 또는 다른 Document Security 인스턴스에 로그인하지 않은 경우, 최근에 사용한 목록에는 기본 서버에 대한 정책만 표시됩니다.
 
 >[!NOTE]
 >
->정책은 Microsoft® Office 2010 및 2013의 Word(.doc, .docx, .docm), Excel(.xls, .xlsx, .xlsm) 및 PowerPoint(.ppt, .pptx, .pptm) 파일에만 적용할 수 있습니다. Word 템플릿 파일(.dot), Excel 템플릿 파일(.xlt) 및 PowerPoint 디자인 템플릿 파일(.pot)에는 정책을 적용할 수 없습니다.
+>정책은 Microsoft® Office 2010 및 2013의 Word(.doc, .docx, .docm), Excel(.xls, .xlsx, .xlsm) 및 PowerPoint(.ppt, .pptx, .pptm) &#x200B;&#x200B;파일에만 적용할 수 있습니다. Word 템플릿 파일(.dot), Excel 템플릿 파일(.xlt) 및 PowerPoint 디자인 템플릿 파일(.pot)에는 정책을 적용할 수 없습니다.
 
 #### 정책 적용 {#apply-a-policy}
 
@@ -344,40 +344,40 @@ Document Security 웹 페이지에서 정책을 만드는 데 사용할 수 있�
 1. 목록에서 정책을 선택하고 **적용**&#x200B;을 클릭합니다.
 1. 파일을 저장합니다.
 
-#### 최근에 사용한 정책 적용 {#apply-a-recently-used-policy}
+#### 최근 사용한 정책 적용 {#apply-a-recently-used-policy}
 
 1. Microsoft® Office 2010 및 2013용 Document Security Extension의 **Document Security** 탭에서 **보안** > *[정책 이름]*&#x200B;을 선택합니다.
 1. 파일을 저장합니다.
 
 ## 정책으로 보호된 파일 작업 {#usingaemdocumentsecurityextensionpolicyprotectedfiles}
 
-파일 게시자는 정책으로 보호된 파일의 지적 재산을 소유하며 Document Security가 이를 보호합니다.
+파일 게시자는 Document Security의 보호 정책으로 보호된 파일의 지적 재산을 소유합니다.
 
-파일 게시자 조직의 내부에 있든 외부에 있든 관계없이 정책으로 보호된 파일을 사용할 수 있습니다. 정책으로 보호된 파일을 열려면 Document Security가 사용자를 인식해야 합니다. LDAP/Active Directory를 통해 이루어져야 합니다. 또는 JEE의 LiveCycle/AEM 양식에 대한 로컬 사용자로 사용하거나 초대 후 등록해야 합니다.
+파일 게시자 조직의 내부에 있든 외부에 있든 관계없이 정책으로 보호된 파일을 사용할 수 있습니다. Document Security에서 정책으로 보호된 파일을 열려면 사용자가 인식되어야 합니다. LDAP/Active Directory를 통해 이를 수행해야 합니다. 또는 JEE의 LiveCycle/AEM 양식에 대한 로컬 사용자로 수행하거나, 초대를 받고 등록을 한 후에 수행해야 합니다.
 
-정책으로 보호된 파일을 받았지만 Document Security 계정이 없는 경우 보낸 사람에게 도움을 요청하십시오. 마찬가지로, 등록 초대를 받은 경우 발신자에게 도움을 요청하십시오.
+정책으로 보호된 파일을 받았지만 Document Security 계정이 없는 경우 보낸 사람에게 도움을 요청하십시오. 마찬가지로, 등록 초대를 받은 경우 초대를 보낸 사람에게 도움을 요청하십시오.
 
 ### Microsoft® Office에서 정책으로 보호된 파일 작업 {#working-with-policy-protected-files-in-microsoft-office}
 
 Microsoft® Office용 Document Security Extension은 파일 게시자의 지적 재산을 보호하기 위해 특정 Word, Excel 및 PowerPoint 기능을 제한합니다. 파일을 변경할 수 있는 권한이 없으면 수정 사항을 저장할 수 없습니다.
 
-정책으로 보호된 파일로 작업하는 경우 일부 제품 기능을 사용할 수 없거나 평소처럼 작동하지 않을 수 있습니다. 보호되지 않은 파일이 열려 있으면 복사 또는 내보내기 권한 없이 정책으로 보호된 파일에서 콘텐츠를 가져오거나 복사할 수 있는 기능을 제외한 대부분의 기능이 활성화됩니다.
+정책으로 보호된 파일로 작업하는 경우 일부 제품 기능을 사용할 수 없거나 평소처럼 작동하지 않을 수 있습니다. 보호되지 않은 파일이 열려 있는 경우, 복사 또는 내보내기 권한 없이 정책으로 보호된 파일에서 콘텐츠를 가져오거나 복사할 수 있는 기능을 제외한 대부분의 기능은 활성화됩니다.
 
 >[!NOTE]
 >
->Document Security Extension 지원 Office 애플리케이션을 사용하는 경우 Windows DEP 설정을 비활성화하는 것이 좋습니다. Document Security Extension과 실시간 검색이 활성화된 McAfee VirusScan이 있는 컴퓨터에서 Office 애플리케이션을 원활하게 시작하려면 McAfee VirusScan 콘솔에서 버퍼 오버플로 방지 옵션을 비활성화하십시오. 이러한 조정은 잠재적인 충돌을 방지하는 데 도움이 됩니다.
+>Document Security Extension 지원 Office 애플리케이션을 사용하는 경우 Windows DEP 설정을 비활성화하는 것이 좋습니다. Document Security Extension이 설치되어 있고 실시간 검색이 활성화된 McAfee VirusScan이 있는 컴퓨터에서 Office 애플리케이션이 원활하게 시작되도록 하려면 McAfee VirusScan 콘솔에서 버퍼 오버플로 방지 옵션을 비활성화하십시오. 이 조정은 잠재적인 충돌을 방지하는 데 유용합니다.
 
-기능을 사용할 수 없는 경우 메뉴의 명령 이름과 관련 도구 모음 버튼을 사용할 수 없습니다. Microsoft® Office용 Document Security Extension에서 명령이나 단추 위에 마우스 포인터를 놓으면 Document Security에서 해당 명령을 사용할 수 없다는 도구 설명이 표시됩니다.
+기능을 사용할 수 없는 경우 메뉴의 명령 이름과 관련 도구 모음 버튼을 사용할 수 없습니다. Microsoft® Office용 Document Security Extension에서 명령이나 버튼 위에 마우스 포인터를 올려 놓으면 Document Security에서 해당 명령을 사용할 수 없다는 도구 설명이 표시됩니다.
 
 ### 정책으로 보호된 파일 열기 {#opening-policy-protected-files}
 
-다른 파일을 여는 데 사용하는 것과 동일한 방법을 사용하여 정책으로 보호된 파일을 열 수 있습니다. Document Security에 아직 로그인하지 않은 경우 로그인하라는 메시지가 표시됩니다. 즉, 인터넷에 연결되어 있지 않고 오프라인으로 파일을 열 수 있습니다. 로그인 프로세스를 취소하면 액세스가 거부됩니다.
+다른 파일을 여는 데 사용하는 것과 동일한 방법을 사용하여 정책으로 보호된 파일을 열 수 있습니다. Document Security에 아직 로그인하지 않은 경우, 로그인하라는 메시지가 표시됩니다. 이렇게 하면 인터넷에 연결되어 있지 않은 경우에도 오프라인으로 파일을 열 수 있습니다. 로그인 프로세스를 취소하면 액세스가 거부됩니다.
 
 파일을 열 수 있는 권한이 없는 경우 액세스가 거부되었다는 메시지가 표시됩니다. 파일 액세스 권한이 취소된 경우 업데이트된 파일 버전이 있는 경우 해당 버전으로 이동할 수도 있습니다. 정책으로 보호된 파일을 열 수 없는 경우 추가 지원이 필요하면 파일 게시자에게 문의하십시오.
 
 보호된 파일이 열려 있을 때 파일 이름 뒤에 오는 제목 표시줄의 텍스트는 해당 파일이 AEM Document Security에 의해 보호되고 있음을 나타냅니다.
 
-SharePoint Server로부터 Microsoft® Office용 Document Security Extension에서 보호된 문서를 열 때 Word, Excel 또는 PowerPoint와 같은 파일 형식과 연결된 Office 프로그램이 열려 있는지 확인하십시오. 관련 애플리케이션은 열지 않고 파일을 열려고 하면 문서가 열리지 않고 해당 플러그인을 설치해야 한다는 오류 메시지가 표시됩니다. Adobe 필요한 응용 프로그램을 열 뿐만 아니라 캐시 폴더를 지우는 것이 좋습니다. SharePoint 서버에서 Office용 Document Security Extension에서 보호된 문서를 열기 전에 이 작업을 수행하십시오. 또한 SharePoint Server로부터 보호된 문서를 열면 적용된 정책에 관계없이 문서에 대한 모든 권한이 비활성화됩니다.
+SharePoint Server로부터 Microsoft® Office용 Document Security Extension에서 보호된 문서를 열 때 Word, Excel, or PowerPoint 등 파일 형식과 관련된 Office 프로그램이 열려 있는지 확인합니다. 관련 애플리케이션은 열지 않고 파일을 열려고 하면 문서가 열리지 않고 해당 플러그인을 설치해야 한다는 오류 메시지가 표시됩니다. 필요한 애플리케이션을 여는 것 외에도 Adobe에서는 캐시 폴더를 지울 것을 권장합니다. SharePoint 서버의 Office에 대한 Document Security Extension에서 보호된 문서를 열기 전에 캐시 폴더를 지우십시오. 또한 SharePoint Server로부터 보호된 문서를 열면 적용된 정책에 관계없이 문서에 대한 모든 권한이 비활성화됩니다.
 
 Document Security에 구현된 인증 방법에 따라 보호된 문서를 열 때 인증 방법을 선택하라는 메시지가 표시될 수 있습니다. Document Security가 두 개 이상의 인증 방법을 지원하는 경우 인증 옵션이 표시됩니다. 예를 들어 Document Security 서버가 사용자 이름/암호 및 인증서 인증을 모두 제공하는 경우 적절한 인증 방법을 선택할 수 있습니다. 인증서 기반 인증이 활성화된 경우 받아서 설치한 인증서를 사용하라는 메시지가 표시됩니다.
 
@@ -385,7 +385,7 @@ Document Security에 구현된 인증 방법에 따라 보호된 문서를 열 �
 
 ### 파일에서 정책 보호 제거 {#removing-policy-protection-from-a-file}
 
-허용되는 경우 보호한 파일에서 정책 보호를 제거할 수 있습니다. 그렇게 하면 파일이 더 이상 Document Security에 의해 보호되지 않습니다.
+허용되는 경우 보호 설정한 파일에서 정책 보호를 제거할 수 있습니다. 그렇게 하면 파일이 더 이상 Document Security에 의해 보호되지 않습니다.
 
 1. Microsoft® Office 2010 및 2013용 Document Security Extension의 **Document Security** 탭에서 **제거**&#x200B;를 선택합니다.
 
@@ -397,7 +397,7 @@ Document Security에 구현된 인증 방법에 따라 보호된 문서를 열 �
 
 ### 보안 설정 보기 {#viewing-security-settings}
 
-현재 파일에 대해 가지고 있는 인쇄 권한을 볼 수 있습니다. 파일 유효 기간과 더불어, 오프라인에서 복사, 변경 및 액세스할 때 현재 파일에 대한 권한을 볼 수도 있습니다.
+인쇄할 현재 파일에 대해 보유하고 있는 권한을 볼 수 있습니다. 파일 유효 기간과 더불어, 인쇄, 복사, 변경, 오프라인 액세스 등을 수행할 때 현재 파일에 대한 권한을 볼 수 있습니다.
 
 Microsoft® Office 2010용 Document Security Extension에서는 Document Security 탭의 보안 상태 그룹에 파일에 대한 사용 권한이 표시됩니다.
 
@@ -409,29 +409,29 @@ Microsoft® Office 2010용 Document Security Extension에서는 Document Securit
 
 관리자가 자동 적용 정책 기능을 활성화한 경우 사용자가 만들거나 편집한 모든 문서는 문서를 저장할 때 자동으로 보호됩니다.
 
-자동 적용 정책이 활성화된 경우 Microsoft® Office용 Document Security Extension은 Document Security 서버에 로그인하라는 메시지를 표시합니다. 서버에서 인증할 수 있도록 사용자 이름과 암호를 입력합니다. 올바른 로그인 자격 증명을 제공한 경우 문서가 저장되고 보호됩니다.
+자동 적용 정책이 활성화된 경우 Microsoft® Office용 Document Security Extension은 Document Security 서버에 로그인하라는 메시지를 표시합니다. 서버에서 인증할 수 있도록 사용자 이름과 암호를 입력하십시오. 올바른 로그인 자격 증명을 제공한 경우 문서가 저장되고 보호됩니다.
 
 >[!NOTE]
 >
->Document Security에 로그인할 수 없는 경우 문서가 저장될 수도, 저장되지 않을 수도 있습니다. 이 상황은 관리자가 자동 적용 정책을 구성한 방법에 따라 다릅니다. 이런 상황에서는 문서가 어떻게 처리되는지 관리자에게 문의하십시오.
+>Document Security에 로그인할 수 없는 경우 문서가 저장될 수도, 저장되지 않을 수도 있습니다. 이러한 상황은 관리자가 자동 적용 정책을 구성한 방법에 따라 달라집니다. 이런 상황에서는 문서가 어떻게 처리되는지 관리자에게 문의하십시오.
 
 ### 오프라인 액세스를 위한 동기화 {#synchronizing-for-offline-access}
 
-정책을 사용하면 오프라인 상태이며 문서 보안에 연결되지 않은 상태에서도 파일을 열 수 있습니다. 오프라인으로 작업하려면 이전에 Document Security에 로그인하여 서버에 대한 자격 증명을 설정해야 합니다. Adobe 오프라인으로 파일 작업을 계획하는 경우 Document Security와 동기화하는 것이 좋습니다. 연결을 끊기 전에 연결을 끊어 파일에 대한 정책 설정이 서버와 최신 상태인지 확인하십시오. Adobe 오프라인으로 열기 전에 온라인으로 한 번 파일을 여는 것이 좋습니다. 온라인으로 한 번 파일을 열지 않거나 서버와 동기화하지 않은 경우에도 오프라인 상태에서 정책으로 보호된 파일을 계속 사용할 수 있습니다. 단, 오프라인 임대 기간이 만료되지 않았어야 하며, 마지막으로 서버와 수동 또는 자동 동기화한 이후 파일에 대한 정책 설정이 변경되지 않았어야 합니다.
+정책을 사용하면 오프라인 상태이며 문서 보안에 연결되지 않은 상태에서도 파일을 열 수 있습니다. 오프라인으로 작업하려면 이전에 Document Security에 로그인하여 서버에 대한 자격 증명을 설정해야 합니다. 오프라인으로 파일을 작업하려는 경우 Adobe에서는 Document Security에 동기화할 것을 권장합니다. 연결을 끊기 전에 동기화를 수행하여 파일에 대한 정책 설정을 서버에서 최신 상태로 유지하십시오. 또한 Adobe는 오프라인으로 열기 전에 온라인으로 한 번 파일을 여는 것을 권장합니다. 온라인으로 한 번 파일을 열지 않거나 서버와 동기화하지 않은 경우에도 오프라인 상태에서 정책으로 보호된 파일을 계속 사용할 수 있습니다. 단, 오프라인 임대 기간이 만료되지 않았어야 하며, 마지막으로 서버와 수동 또는 자동 동기화한 이후 파일에 대한 정책 설정이 변경되지 않았어야 합니다.
 
 다음 작업을 수행합니다.
 
 * Microsoft® Office 2010 및 Office 2013용 Document Security Extension의 **Document Security** 탭에서 **오프라인 동기화**&#x200B;을 선택합니다.
 
-  ***참고&#x200B;**: 사용자에게 문서에 대한 오프라인 권한이 없는 경우에도 오프라인 동기화 단추를 사용할 수 있습니다. 그러나 버튼을 선택해도 아무 작업도 수행되지 않습니다.*
+  ***참고&#x200B;**: 사용자에게 문서에 대한 오프라인 권한이 없는 경우에도 오프라인 동기화 버튼이 제공될 수 있습니다. 그러나 버튼을 선택해도 아무 작업도 수행되지 않습니다.*
 
 ### 동적 워터마크 작업 {#working-with-dynamic-watermarks}
 
 Microsoft® Office용 Document Security Extension은 정책으로 보호된 문서에 동적 텍스트 기반 워터마크를 포함하는 것을 지원합니다. 동적 워터마크에는 날짜, 시간, 사용자 이름 또는 정책 이름과 같이 변경될 수 있는 정보가 포함될 수 있습니다. 사용자가 정책으로 보호된 파일을 인쇄하고 해당 파일에 동적 워터마크와 인쇄 권한이 포함된 경우 워터마크가 출력에 나타납니다.
 
-Document Security Extension은 풍부한 워터마크 기능을 지원하지 않습니다. 풍부한 워터마크 기능에는 PDF 기반 워터마크, 워터마크의 여러 요소, 텍스트 서식 옵션 등이 포함됩니다. 페이지 범위도 포함됩니다.
+Document Security Extension은 풍부한 워터마크 기능을 지원하지 않습니다. 풍부한 워터마크 기능에는 PDF 기반 워터마크, 워터마크의 여러 요소, 텍스트 서식 옵션 및 페이지 범위와 같은 기능이 포함됩니다.
 
-Document Security 웹 페이지를 사용하여 동적 워터마크를 만들 수 있습니다. 자세한 내용은 [Document Security 최종 사용자 도움말](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/work-with-document-security/document-security)을 참조하십시오.
+Document Security 웹 페이지를 사용하여 동적 워터마크를 만들 수 있습니다. 자세한 내용은 [Document Security 최종 사용자 도움말](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/administrator-help/work-with-document-security/document-security)을 참조하십시오.
 
 Microsoft® Office용 Document Security Extension은 다음과 같은 워터마크 기능을 지원합니다.
 
@@ -453,7 +453,7 @@ Microsoft® Office용 Document Security Extension은 다음과 같은 워터마�
   </tr>
   <tr>
    <td><p>배경으로 사용</p></td>
-   <td><p>동적 워터마크의 표시 동작은 배경으로 사용 선택 여부에 관계없이 동일합니다.</p><p>Word 2010 및 2013의 경우 동적 워터마크는 인쇄 레이아웃 및 인쇄 미리보기 보기에만 나타납니다. </p><p>Excel 2010 및 2013의 경우에도 인쇄 미리 보기 및 페이지 레이아웃 보기에 나타납니다.</p></td>
+   <td><p>동적 워터마크의 표시 동작은 배경으로 사용 선택 여부에 관계없이 동일합니다.</p><p>Word 2010 및 2013의 경우 동적 워터마크는 인쇄 레이아웃 및 인쇄 미리보기 보기에만 나타납니다. </p><p>Excel 2010 및 2013의 경우에도 인쇄 미리보기 및 페이지 레이아웃 보기에 나타납니다.</p></td>
   </tr>
   <tr>
    <td><p>세로 위치</p></td>
@@ -488,7 +488,7 @@ Document Security 웹 페이지를 열려면 Microsoft® Office 2010 및 2013용
 
 일반적으로 Document Security 관리자 또는 파일 게시자와 같은 권한이 있는 경우 나중에 다른 정책을 파일에 적용하거나 현재 적용된 정책의 설정을 변경할 수 있습니다.
 
-정책의 설정을 변경하려면 Document Security 웹 페이지를 사용하십시오.
+정책 설정을 변경하려면 Document Security 웹 페이지를 사용하십시오.
 
 1. 다음 작업을 수행합니다.
 
@@ -498,7 +498,7 @@ Document Security 웹 페이지를 열려면 Microsoft® Office 2010 및 2013용
 
 ### 파일 액세스 권한 취소 {#revoking-file-access-privileges}
 
-보호한 파일을 여는 기능을 취소할 수 있습니다. 파일 액세스를 취소할 때 사용자가 파일 액세스를 열려고 할 때 메시지를 지정하고 수정된 사본으로 바꿀 경우 업데이트된 버전에 대한 URL을 제공할 수 있습니다.
+보호한 파일을 여는 기능을 취소할 수 있습니다. 파일 액세스 권한을 취소하는 경우 사용자가 해당 파일을 열려고 할 때 표시되는 메시지를 지정하고, 수정된 사본으로 교체하는 경우 업데이트된 버전에 대한 URL을 제공할 수 있습니다.
 
 1. 다음 작업을 수행합니다.
 
@@ -508,7 +508,7 @@ Document Security 웹 페이지를 열려면 Microsoft® Office 2010 및 2013용
 
 1. 표시할 메시지를 지정하고, 업데이트된 버전의 URL을 지정하고(사용 가능한 경우) **확인**&#x200B;을 클릭합니다.
 
-파일 액세스 권한 취소에 대한 자세한 내용은 [Document Security 최종 사용자 도움말](https://help.adobe.com/en_US/AEMForms/6.1/RMHelp/)을 참조하십시오.
+파일 액세스 권한 취소에 대한 자세한 내용은 [Document Security 최종 사용자 도움말](https://help.adobe.com/ko_KR/AEMForms/6.1/RMHelp/)을 참조하십시오.
 
 Document Security 웹 페이지를 통해 액세스 권한을 복원할 수 있습니다.
 
@@ -579,11 +579,11 @@ Word에서 정책으로 보호된 파일을 열면 Word를 닫고 다시 시작�
 
 **파일 > 저장 및 보내기** 보호된 세션 중에는 모든 옵션을 사용할 수 없습니다.
 
-**파일 > 정보 > Protect 문서 > 암호 설정, 디지털 서명 추가, 최종본으로 표시, 사용자별로 권한 제한** 보호된 세션 중에는 사용할 수 없습니다.
+**파일 > 정보 > 문서 보호 > 암호 설정, 디지털 서명 추가, 최종본으로 표시, 사용자별로 권한 제한** 보호된 세션 중에는 사용할 수 없습니다.
 
 **파일 > 워크플로** 보호된 세션 중에는 사용할 수 없습니다.
 
-***참고&#x200B;**: Word, Excel 및 PowerPoint 2010에서 워크플로를 시작하는 방법은 Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 및 독립 실행형 2010 버전에서만 사용할 수 있습니다.*
+***참고&#x200B;**: Word, Excel, 및 PowerPoint 2010에서 워크플로 시작 기능은 Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 및 독립 실행형 2010 버전에서만 사용할 수 있습니다.*
 
 **블로그 게시물 > 게시** 보호된 세션 중에는 사용할 수 없습니다.
 
@@ -615,13 +615,13 @@ Word에서 정책으로 보호된 파일을 열면 Word를 닫고 다시 시작�
 
 **검토 > 보호 > 편집 제한** 보호된 세션 중에는 사용할 수 없습니다.
 
-**보기 > 매크로** 복사 권한은 일부 매크로를 제한하므로 복사가 허용되지 않는 한 사용할 수 없습니다.
+**보기 > 매크로** 일부 매크로는 복사 권한에 의해 제한되며 복사가 허용되지 않는 한 사용할 수 없습니다.
 
 **추가 기능** 보호된 세션 중에는 추가하거나 제거할 수 없습니다.
 
 **온라인 공동 작업** 보호된 세션 중에는 사용할 수 없습니다.
 
-**기본 및 하위 문서** 기본 문서 정책은 기본 문서 내에서 하위 문서를 열 때 하위 문서를 제어합니다. 별도로 열면 하위 문서를 인쇄하거나 복사하거나 수정할 수 없습니다.
+**기본 및 하위 문서** 기본 문서 정책은 기본 문서 내에서 하위 문서를 열 때 해당 문서를 관리합니다. 별도로 열면 하위 문서를 인쇄하거나 복사하거나 수정할 수 없습니다.
 
 **다시 요약** 보호된 세션 중에는 사용할 수 없습니다.
 
@@ -629,7 +629,7 @@ Word에서 정책으로 보호된 파일을 열면 Word를 닫고 다시 시작�
 
 **문서 패널** 보호된 세션 중에는 사용할 수 없습니다.
 
-**개발자 > 문서 템플릿** 보호된 세션 중에는 사용할 수 없습니다. 이 명령에 액세스하려면 파일 > 옵션 > 사용자 지정 > 개발자 탭 > 템플릿 > 문서 템플릿을 선택합니다.
+**개발자 > 문서 템플릿** 보호된 세션 중에는 사용할 수 없습니다. 이 명령에 액세스하려면 파일 > 옵션 > 사용자 정의 > 개발자 탭 > 템플릿 > 문서 템플릿을 선택합니다.
 
 **개요> 기본 문서 > 하위 문서 만들기, 하위 문서 삽입** 보호된 세션 중에는 사용할 수 없습니다.
 
@@ -655,7 +655,7 @@ Word에서 정책으로 보호된 파일을 열면 Word를 닫고 다시 시작�
 
 **파일 > 워크플로** 보호된 세션 중에는 사용할 수 없습니다.
 
-***참고&#x200B;**: Word, Excel 및 PowerPoint 2010에서 워크플로를 시작하는 방법은 Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 및 독립 실행형 2010 버전에서만 사용할 수 있습니다.*
+***참고&#x200B;**: Word, Excel, 및 PowerPoint 2010에서 워크플로 시작 기능은 Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 및 독립 실행형 2010 버전에서만 사용할 수 있습니다.*
 
 **파일 > 서버 > 파일 서버 작업 메뉴** 보호된 세션 중에는 사용할 수 없습니다.
 
@@ -709,7 +709,7 @@ Word에서 정책으로 보호된 파일을 열면 Word를 닫고 다시 시작�
 
 **보기 > 작업 영역 저장** 명령이 작동하지 않습니다.
 
-**개발자 > XML > 확장 팩** 복사 권한은 일부 매크로를 제한하므로 복사를 허용하지 않는 한 사용할 수 없습니다.
+**개발자 > XML > 확장 팩** 일부 매크로는 복사 권한에 의해 제한되며 복사가 허용되지 않는 한 사용할 수 없습니다.
 
 **수식 > 수식 감사 > 오류 검사** 변경 권한에 의해 제한됩니다. 변경이 허용되지 않는 한 사용할 수 없습니다.
 
@@ -717,7 +717,7 @@ Word에서 정책으로 보호된 파일을 열면 Word를 닫고 다시 시작�
 
 **자동 복구 정보 저장** 보호된 세션 중에는 사용할 수 없습니다.
 
-***참고&#x200B;**: 권한이 없는 정책으로 보호된 파일의 셀을 변경하려고 하면 Excel에서 시트 보호 해제 명령을 사용하여 보호를 제거하라는 경고가 잘못 표시됩니다.*
+***참고&#x200B;**: 변경할 권한이 없는 정책으로 보호된 파일의 셀을 변경하려고 하면 Excel은 시트 보호 해제 명령을 사용하여 파일에서 보호를 제거해야 한다는 잘못된 경고 메시지를 표시합니다.*
 
 #### PowerPoint 2010 및 PowerPoint 2013 제한 사항 {#powerpoint-2010-and-powerpoint-2013-restrictions}
 
@@ -733,7 +733,7 @@ Word에서 정책으로 보호된 파일을 열면 Word를 닫고 다시 시작�
 
 **파일 > 저장 및 보내기** 보호된 세션 중에는 사용할 수 없습니다.
 
-**파일 > 정보 > Protect 프레젠테이션 > 암호 설정, 디지털 서명 추가, 최종본으로 표시, 사용자별로 권한 제한** 보호된 세션 중에는 사용할 수 없습니다.
+**파일 > 정보 > 프레젠테이션 보호 > 암호 설정, 디지털 서명 추가, 최종본으로 표시, 사용자별로 권한 제한** 보호된 세션 중에는 사용할 수 없습니다.
 
 **파일 > PowerPoint 옵션 > 자동 복구 정보 저장** 보호된 세션 중에는 사용할 수 없습니다.
 
@@ -745,13 +745,14 @@ Word에서 정책으로 보호된 파일을 열면 Word를 닫고 다시 시작�
 
 **홈 > 클립보드 > 선택하여 붙여넣기** 변경 권한에 의해 제한됩니다.
 
-**홈 > 슬라이드 > 새 슬라이드 > 개요에서 슬라이드 삽입, 슬라이드 재사용** 보호된 세션 중에는 사용할 수 없습니다.
+**홈 > 슬라이드 > 새 슬라이드 > 개요에서 슬라이드 삽입,
+슬라이드 재사용** 보호된 세션 중에는 사용할 수 없습니다.
 
 **삽입 > 텍스트 > 오브젝트** 보호된 세션 중에는 사용할 수 없습니다. 어느 때라도 정책으로 보호된 파일은 삽입할 수 없습니다.
 
-**디자인 > 배경 > 배경 스타일, 배경 그래픽 숨기기, 배경 서식** 동적 워터마크가 포함된 정책 보호 파일에는 사용할 수 없습니다.
+**디자인> 배경> 배경 스타일, 배경 그래픽 숨기기, 배경 서식** 동적 워터마크가 포함된 정책 보호 파일에는 사용할 수 없습니다.
 
-**슬라이드 쇼 > 설정 > 슬라이드 쇼 녹화** 변경 권한에 의해 제한됩니다.
+**슬라이드 쇼> 설정> 슬라이드 쇼 녹화** 변경 권한에 의해 제한됩니다.
 
 **검토 > 교정 > 동의어 사전** 복사 권한에 의해 제한됩니다.
 
@@ -761,7 +762,7 @@ Word에서 정책으로 보호된 파일을 열면 Word를 닫고 다시 시작�
 
 **보기 > 프레젠테이션 보기> 슬라이드 쇼** 변경 권한에 의해 제한됩니다. 변경이 허용되지 않는 경우 파일이 수정되면 슬라이드 쇼를 볼 수 없습니다.
 
-**보기 > 매크로** 복사 권한은 일부 매크로를 제한하므로 복사가 허용되지 않는 한 사용할 수 없습니다.
+**보기 > 매크로** 일부 매크로는 복사 권한에 의해 제한되며 복사가 허용되지 않는 한 사용할 수 없습니다.
 
 **추가 기능** 보호된 세션 중에는 추가하거나 제거할 수 없습니다.
 
@@ -772,11 +773,11 @@ Word에서 정책으로 보호된 파일을 열면 Word를 닫고 다시 시작�
 AEM Forms Document Security와 함께 서드파티 인증 공급자를 사용할 수 있습니다. 이러한 인증 공급자는 보호된 문서에 추가 액세스 계층을 추가하는 데 도움이 됩니다. AEM Forms Document Security는 다음과 같은 확장 인증 워크플로를 지원합니다.
 
 * 기본 AEM Forms URL을 사용한 확장 인증
-* 사용자 지정 URL을 사용한 확장 인증
+* 사용자 정의 URL을 사용한 확장 인증
 * JEE 서버의 AEM Forms에 구성된 서드파티 ID 공급자를 사용하는 기본 확장 인증 워크플로
-* JEE 서버의 AEM Forms에 구성된 서드파티 ID 공급자를 사용하는 사용자 지정 확장 인증 워크플로
-* SAML 인증을 나열하기 위해 사용자 지정된 페이지를 사용한 확장 인증
+* JEE 서버의 AEM Forms에 구성된 서드파티 ID 공급자를 사용하는 사용자 정의 확장 인증 워크플로
+* SAML 인증을 나열하기 위해 사용자 정의 페이지를 사용한 확장 인증
 
 ## 용어 설명 {#glossary}
 
-JEE 용어에 대한 LiveCycle 및 AEM Forms에 대한 자세한 내용은 [19장: 용어집](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf)을 참조하십시오.
+JEE 용어에 대한 LiveCycle 및 AEM Forms에 대한 자세한 내용은 [19장: 용어집](https://helpx.adobe.com/kr/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf)을 참조하십시오.
