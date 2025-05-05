@@ -82,7 +82,7 @@ Document Security 관리자와 사용자는 정책을 수립합니다. 관리자
   </tr>
   <tr>
    <td><p>이 제품 버전에 대한 패치 업데이트, 기술 참고 사항 및 추가 정보</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support">Experience Cloud 기술 지원</a></p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/ko?support-solution=General&amp;support-tab=home#support">Experience Cloud 기술 지원</a></p> </td>
   </tr>
  </tbody>
 </table>
