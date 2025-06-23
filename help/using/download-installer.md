@@ -5,10 +5,10 @@ uuid: b4c7d1d1-7eae-4fd3-8282-132c80a976e8
 contentOwner: khsingh
 discoiquuid: b32c7bb8-0060-4c2a-90fc-446b6ba39159
 exl-id: 25d2f439-e6c9-4d0a-bbd1-91d0f00dc683
-source-git-commit: 3b6a686966fb8d006bed8cc4a4bf5eebe0dfb030
-workflow-type: ht
-source-wordcount: '207'
-ht-degree: 100%
+source-git-commit: 265c81b4b424c96e1d53c962af39756ee43c443d
+workflow-type: tm+mt
+source-wordcount: '213'
+ht-degree: 82%
 
 ---
 
@@ -22,9 +22,9 @@ Microsoft® Office용 Document Security Extension 소프트웨어를 사용하�
 
 ## 시스템 요구 사항 {#system-requirements}
 
-* 32비트 또는 64비트 버전의 Microsoft® Windows 7 또는 Windows 10
+* Microsoft® Windows 11의 Microsoft® Office 2019 Professional Plus 32비트 또는 64비트 버전
+* Microsoft® Windows 10에서 Office 365의 일부로 설치된 Microsoft® Office 2016, Office 2019 또는 Office 데스크탑 애플리케이션의 32비트 또는 64비트 버전
 * 참고: Microsoft® Office용 문서 보안 확장 기능은 Microsoft® Surface 디바이스에서도 작동합니다.
-* 32비트 또는 64비트 버전 Microsoft® Office 2013, 2016, 2019 또는 Office 365의 일부로 설치된 Microsoft® Office 데스크탑 애플리케이션
 * 1.3GHz 프로세서 이상
 * 2GB RAM
 * 100MB의 하드 디스크 여유 공간
