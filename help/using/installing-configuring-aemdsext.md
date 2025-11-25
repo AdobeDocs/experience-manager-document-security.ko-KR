@@ -6,10 +6,10 @@ content-type: reference
 topic-tags: installing
 discoiquuid: f1cdf344-efe4-4cb5-9fc3-47ee4ba5faf4
 exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
-source-git-commit: 69abd3e49fcf79b8bf2a7f344abeeae250b1479f
-workflow-type: ht
+source-git-commit: 7eb2b2e5ba296b87159978037ae50c702f7d0656
+workflow-type: tm+mt
 source-wordcount: '2845'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -56,7 +56,7 @@ Document Security Extension을 설치할 다음 최소 구성을 확인하십시
 
 * Microsoft Windows 11에서 영어, 프랑스어, 독일어, 일본어, 이탈리아어, 스페인어, 포르투갈어(브라질), 한국어, 중국어 간체 또는 중국어 번체로 된 32비트 또는 64비트 버전의 Microsoft Office 2019 Professional Plus.
 
-* 영어, 프랑스어, 독일어, 일본어, 이탈리아어, 스페인어, 포르투갈어(브라질), 한국어, 중국어 간체 또는 중국어 번체로 된 32비트 또는 64비트 버전의 Microsoft Windows 10.
+* 영어, 프랑스어, 독일어, 일본어, 이탈리아어, 스페인어, 브라질, 포르투갈어, 한국어, 중국어 간체 또는 중국어 번체로 된 32비트 또는 64비트 버전의 Microsoft Windows 10.
 
   **참고:** *Microsoft Office용 문서 보안 확장 기능은 Microsoft Surface 디바이스에서도 작동합니다.*
 
@@ -72,7 +72,7 @@ Document Security Extension을 설치할 다음 최소 구성을 확인하십시
 
 Document Security Extension을 사용하려면 Adobe LiveCycle Rights Management ES2 이상 또는 AEM 6.0 Forms용 Document Security 추가 기능에 연결할 수 있는지 확인하십시오.
 
-## Microsoft Office용 AEM Document Security Extension 설치 {#installing-document-security-extension-for-microsoft-office}
+## Microsoft Office용 Document Security Extension 설치 {#installing-document-security-extension-for-microsoft-office}
 
 설치 관리자는 [다운로드 페이지](download-installer.md)에서 다운로드할 수 있습니다. 설치 관리자 실행 파일을 직접 맞춤화할 수는 없지만 상호 작용 방식으로 또는 자동 모드로 설치할 수 있습니다. 소프트웨어를 설치하려면 Windows에 관리자로 로그인하십시오.
 
@@ -182,13 +182,13 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
 * 기본 정책으로 모든 문서를 보호합니다.
 * 사용자가 서버에 연결할 수 없는 경우 사용자가 선택적으로 보호되지 않는 형식으로 파일을 저장할 수 있도록 허용합니다. 이러한 유연성 덕분에 사용자가 네트워크 연결이 끊어진 상태(예: 비행기 탑승 중)에서 문서를 만드는 경우를 고려할 수 있습니다.
 
-자동 적용 정책 기능을 활성화하면 다음과 같은 경우 문서가 기본 정책으로 보호됩니다.
+자동 적용된 정책 기능을 활성화하면 다음과 같은 경우 문서가 기본 정책으로 보호됩니다.
 
 * 사용자가 새로 만든 문서를 편집하고 저장함
 * 사용자가 보호되지 않은 문서를 편집하고 저장함
 * 사용자가 기본 문서로 열리는 애플리케이션을 열고 편집한 다음 문서를 저장함
 
-### MSI 파일에서 자동 적용 정책 기능 구성 {#configure-the-auto-apply-policy-feature-in-the-msi-file}
+### MSI 파일에서 자동 적용된 정책 기능 구성 {#configure-the-auto-apply-policy-feature-in-the-msi-file}
 
 시작하기 전에 이 문서의 앞부분에서 설명한대로 LiveCycle 또는 AEM Forms 서버로 향하도록 설치 관리자를 미리 구성합니다.
 
@@ -247,14 +247,14 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
 
 ## 새 문서의 자동 보호 활성화 {#enabling-automatic-protection-of-new-documents}
 
-관리자는 사용자가 저장한 모든 문서를 자동으로 보호하는 기능을 활성화할 수 있습니다. 관리자는 Microsoft Office용 Document Security Extension의 설치 프로그램에서 자동 적용 정책 기능을 구성합니다.
+관리자는 사용자가 저장한 모든 문서를 자동으로 보호하는 기능을 활성화할 수 있습니다. 관리자는 Microsoft Office용 Document Security Extension의 설치 프로그램에서 자동 적용된 정책 기능을 구성합니다.
 
 자동 적용 정책이 활성화된 경우 사용자가 저장하는 모든 문서는 기본 정책으로 보호됩니다. 이 조치는 다음 상황에 적용됩니다.
 
 * 사용자가 새 문서를 작성하고 편집하고 저장하는 경우
 * 사용자가 보호되지 않은 문서를 열고 편집한 후 저장하는 경우
 
-자동 적용 정책 구성에 대한 정보는 [기본 정책의 자동 적용 구성](installing-configuring-aemdsext.md#p-configuring-automatic-application-of-a-default-policy-p)을 참조하십시오.
+자동 적용 정책 구성에 대한 자세한 내용은 [기본 정책의 자동 적용 구성](installing-configuring-aemdsext.md#p-configuring-automatic-application-of-a-default-policy-p)을 참조하십시오.
 
 ## 리본 없는 사용자 인터페이스 활성화 {#enable-ribbon-less-user-interface}
 

@@ -6,10 +6,10 @@ content-type: reference
 topic-tags: using
 discoiquuid: cf93f9f5-1fb6-4909-815e-0ffb8c6ea6d1
 exl-id: 3e07c031-3f88-4bde-bdb3-b136ef5f9527
-source-git-commit: 3b6a686966fb8d006bed8cc4a4bf5eebe0dfb030
-workflow-type: ht
+source-git-commit: 7eb2b2e5ba296b87159978037ae50c702f7d0656
+workflow-type: tm+mt
 source-wordcount: '1248'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -68,7 +68,7 @@ Document Security 관리자와 사용자는 정책을 수립합니다. 관리자
 
 ## 추가 정보 {#additional-information}
 
-이 표의 리소스는 AEM Document Security에 대해 자세히 알아 보는 데 도움이 될 수 있습니다.
+이 테이블의 리소스는 AEM Document Security에 대해 자세히 알아 보는 데 도움이 될 수 있습니다.
 
 <table >
  <tbody>
@@ -82,7 +82,7 @@ Document Security 관리자와 사용자는 정책을 수립합니다. 관리자
   </tr>
   <tr>
    <td><p>이 제품 버전에 대한 패치 업데이트, 기술 참고 사항 및 추가 정보</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/ko?support-solution=General&amp;support-tab=home#support">Experience Cloud 기술 지원</a></p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support">Experience Cloud 기술 지원</a></p> </td>
   </tr>
  </tbody>
 </table>
