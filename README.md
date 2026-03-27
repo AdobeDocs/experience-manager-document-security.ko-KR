@@ -1,10 +1,16 @@
 ---
-source-git-commit: 2b12d01aa269dd7a38ce067c496462d02a7884b5
+source-git-commit: 6cf19ed9439e5be5a4c2e2fa2458879f37c25b96
 workflow-type: tm+mt
-source-wordcount: '7'
+source-wordcount: '79'
 ht-degree: 0%
 
 ---
-# 보관됨
+# Microsoft Office 설명서용 AEM Document Security Extension
 
-이 리포지토리가 <https://github.com/Adobe-Enterprise-Docs/experience-manager-document-security.ko-KR>(으)로 마이그레이션되었습니다.
+Microsoft Office 설명서용 AEM Document Security Extension에 대한 저장소입니다.
+
+설명서에 대한 귀하의 기여를 환영합니다. 다음 리소스를 참조하십시오.
+
+* [contributing.md](contributing.md) 문서에 기여하는 방법에 대한 개요입니다.
+* [guidelines.md](guidelines.md) 기여에서 기대하는 내용과 설명서 기여 작성 방법에 대한 개요입니다.
+* [code-of-conduct.md](code-of-conduct.md) 이 설명서에 기여할 때 Adobe에서 기대하는 동작 표준에 대한 개요입니다. 프로젝트.
