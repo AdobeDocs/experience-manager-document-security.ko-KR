@@ -7,9 +7,14 @@ content-type: reference
 topic-tags: using
 discoiquuid: bdc3f174-e417-4d3e-b3af-972cdcc10133
 exl-id: 98f24032-0774-47f8-bcc5-1ee37b417833
-source-git-commit: 3b6a686966fb8d006bed8cc4a4bf5eebe0dfb030
-workflow-type: ht
-source-wordcount: '284'
+TQID: https://experienceleague.adobe.com/3YVMcSeYDXCWkVeG8HmlJOgja9OwLqs1gpPWP8rhhs0
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: fd5d26fd-7180-407d-bbd8-5f8a17f9c0b8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: b2df949228acdc23ca7f2c55b72e62c1dba130b8
+workflow-type: tm+mt
+source-wordcount: 316
 ht-degree: 100%
 
 ---
@@ -32,7 +37,7 @@ Windows 레지스트리의 LoadBehavior 속성은 문서 보안 플러그인의 
 
 1. 레지스트리 편집기를 닫습니다.
 
-LoadBehavior에 대한 자세한 내용은 [VSTO 추가 기능의 레지스트리 항목](https://learn.microsoft.com/en-us/visualstudio/vsto/registry-entries-for-vsto-add-ins?view=vs-2022&amp;redirectedfrom=MSDN#LoadBehavior) 문서를 참조하십시오.
+LoadBehavior에 대한 자세한 내용은 [VSTO 추가 기능의 레지스트리 항목](https://learn.microsoft.com/en-us/visualstudio/vsto/registry-entries-for-vsto-add-ins?view=vs-2022&redirectedfrom=MSDN#LoadBehavior) 문서를 참조하십시오.
 
 ## 관리 작업 문제 해결 {#admintasks}
 
