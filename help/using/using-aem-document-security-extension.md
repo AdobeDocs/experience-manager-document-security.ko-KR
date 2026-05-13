@@ -6,9 +6,18 @@ content-type: reference
 topic-tags: using
 discoiquuid: f4c2460c-174f-4e4d-b804-1eb051d2781e
 exl-id: 667a9718-b865-4911-96c2-7c08f75e0732
-source-git-commit: 7eb2b2e5ba296b87159978037ae50c702f7d0656
+TQID: https://experienceleague.adobe.com/cI8I72aByEI0tcij2o-QNkGjTxCztTa4uZFXsfwlMVc
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: b2df949228acdc23ca7f2c55b72e62c1dba130b8
 workflow-type: tm+mt
-source-wordcount: '6139'
+source-wordcount: 6278
 ht-degree: 98%
 
 ---
@@ -409,7 +418,7 @@ Microsoft® Office 2010용 Document Security Extension에서는 Document Securit
 
 관리자가 자동 적용 정책 기능을 활성화한 경우 사용자가 만들거나 편집한 모든 문서는 문서를 저장할 때 자동으로 보호됩니다.
 
-자동 적용 정책이 활성화된 경우 Microsoft® Office용 Document Security Extension은 Document Security 서버에 로그인하라는 메시지를 표시합니다. 서버에서 인증할 수 있도록 사용자 이름과 암호를 입력하십시오. 올바른 로그인 자격 증명을 제공한 경우 문서가 저장되고 보호됩니다.
+자동 적용 정책이 활성화된 경우 ® Office용 Document Security Extension은 Document Security 서버에 로그인하라는 메시지를 표시합니다. 서버에서 인증할 수 있도록 사용자 이름과 암호를 입력하십시오. 올바른 로그인 자격 증명을 제공한 경우 문서가 저장되고 보호됩니다.
 
 >[!NOTE]
 >
@@ -464,7 +473,7 @@ Microsoft® Office용 Document Security Extension은 다음과 같은 워터마�
    <td><p>지원됨</p><p>Excel 2010 및 2013의 경우 포인트를 사용한 워터마크의 가로 위치가 작동하지 않습니다.</p></td>
   </tr>
   <tr>
-   <td><p>크기 조정</p></td>
+   <td><p>크기 조절</p></td>
    <td><p>지원됨</p></td>
   </tr>
   <tr>
