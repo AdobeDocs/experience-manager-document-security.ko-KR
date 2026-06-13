@@ -473,7 +473,7 @@ Microsoft® Office용 Document Security Extension은 다음과 같은 워터마�
    <td><p>지원됨</p><p>Excel 2010 및 2013의 경우 포인트를 사용한 워터마크의 가로 위치가 작동하지 않습니다.</p></td>
   </tr>
   <tr>
-   <td><p>크기 조절</p></td>
+   <td><p>크기 조정</p></td>
    <td><p>지원됨</p></td>
   </tr>
   <tr>
