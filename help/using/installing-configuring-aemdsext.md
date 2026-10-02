@@ -9,19 +9,22 @@ exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
 TQID: https://experienceleague.adobe.com/VeYp8E0Yyp4uOAx33B6YmQVUJfNFZOvIad97NopbKcM
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: b2df949228acdc23ca7f2c55b72e62c1dba130b8
+    internal-label: Security
+source-git-commit: 97e24a5c1733b47777d7dcf165ceb3309bf41972
 workflow-type: tm+mt
-source-wordcount: 2933
+source-wordcount: '2933'
 ht-degree: 94%
-
 ---
-
 # Microsoft Office용 AEM Document Security Extension 설치 및 구성{#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
 
 이 문서는 Microsoft Office용 Adobe Experience Manager Document Security Extension을 설치하고 구성하는 과정을 안내합니다.
@@ -47,15 +50,15 @@ Microsoft Office용 Document Security Extension을 설치하기 전에 다음 �
 
 >[!NOTE]
 >
->64비트 운영 체제에 32비트 버전의 Document Security 확장 기능을 설치하면 지원되지만 반대로는 지원되지 않습니다. 32비트 운영 체제에는 64비트 버전의 Microsoft Office용 Document Security Extension을 설치할 수 없습니다.
+>64비트 운영 체제에 32비트 버전의 Document Security 확장 기능을 설치하는 것은 지원되지만 반대의 경우는 지원되지 않습니다. 32비트 운영 체제에는 64비트 버전의 Microsoft Office용 Document Security Extension을 설치할 수 없습니다.
 
 ### McAfee VirusScan 비활성화 {#disable-mcafee-virusscan}
 
 McAfee VirusScan 콘솔에서 버퍼 오버플로 방지 옵션을 비활성화하십시오. 이렇게 하면 Document Security Extension이 설치된 컴퓨터에서 Office 애플리케이션이 원활하게 시작됩니다. 또한 McAfee VirusScan(실시간 검사 포함)이 활성화됩니다. 이러한 조정은 시작 프로세스를 방해할 수 있는 충돌을 방지하는 데 도움이 됩니다.
 
-### 서드파티 플러그인 제거 {#uninstall-third-party-plug-ins}
+### 제3자 플러그인 제거 {#uninstall-third-party-plug-ins}
 
-Microsoft Office용 AEM Document Security Extension은 Microsoft Office 애플리케이션용 서드파티 플러그인을 지원하지 않습니다. 이 확장 기능은 서드파티 플러그인과 충돌하므로 Microsoft Office용 Security for Microsoft Office를 설치하기 전에 Microsoft Office용 비 Adobe 플러그인을 제거하십시오. Adobe는 서드파티 플러그인이 설치된 Microsoft Office 애플리케이션용 Document Security를 지원하지 않습니다.
+Microsoft Office용 AEM Document Security Extension은 Microsoft Office 애플리케이션용 제3자 플러그인을 지원하지 않습니다. 이 확장 기능은 서드파티 플러그인과 충돌하므로 Microsoft Office용 Security for Microsoft Office를 설치하기 전에 Microsoft Office용 비 Adobe 플러그인을 제거하십시오. Adobe는 제3자 플러그인이 설치된 Microsoft Office 애플리케이션용 Document Security를 지원하지 않습니다.
 
 ## 시스템 요구 사항 {#system-requirements}
 
@@ -69,9 +72,9 @@ Document Security Extension을 설치할 다음 최소 구성을 확인하십시
 
   **참고:** *Microsoft Office용 문서 보안 확장 기능은 Microsoft Surface 디바이스에서도 작동합니다.*
 
-* 영어, 프랑스어, 독일어, 일본어, 이탈리아어, 스페인어, 포르투갈어(브라질), 한국어, 중국어 간체 또는 중국어 번체로 된 32비트 또는 64비트 버전 Office 2016, 2019 및 Office 365의 일부로 설치된 Microsoft Office 데스크탑 애플리케이션.
+* 영어, 프랑스어, 독일어, 일본어, 이탈리아어, 스페인어, 포르투갈어(브라질), 한국어, 중국어 간체 또는 중국어 번체로 된 32비트 또는 64비트 버전의 Office 2016, 2019 및 Office 365의 일부로 설치된 Microsoft Office 데스크탑 애플리케이션.
 
-  **참고**: *Microsoft Office용 AEM Document Security Extension은 Microsoft Office 애플리케이션용 서드파티 플러그인을 지원하지 않습니다. 이 확장 기능은 서드파티 플러그인과 충돌할 수 있으므로 Microsoft Office용 Document Security Extension을 설치하기 전에 Microsoft Office 애플리케이션용 Adobe 이외의 플러그인을 제거해야 합니다. Adobe는 서드파티 플러그인이 설치된 Microsoft Office 애플리케이션용 Document Security Extension을 지원하지 않습니다.*
+  **참고**: *Microsoft Office용 AEM Document Security Extension은 Microsoft Office 애플리케이션용 서드파티 플러그인을 지원하지 않습니다. 이 확장 기능은 제3자 플러그인과 충돌할 수 있으므로 Microsoft Office용 Document Security Extension을 설치하기 전에 Microsoft Office 애플리케이션용 Adobe 이외의 플러그인을 제거해야 합니다. Adobe는 서드파티 플러그인이 설치된 Microsoft Office 애플리케이션용 Document Security Extension을 지원하지 않습니다.*
 
 * 1.3GHz 프로세서 이상
 * 2GB RAM
@@ -125,7 +128,7 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
 
 >[!NOTE]
 >
->사용자 정의 MSI 파일을 만들기 전에 모든 설치 관리자 파일을 전체 백업하는 것이 좋습니다.
+>사용자 정의 MSI 파일을 만들기 전에 모든 설치 관리자 파일의 전체 백업을 만드는 것이 좋습니다.
 
 #### Orca 설치 {#install-orca}
 
@@ -136,7 +139,7 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
 
    >[!NOTE]
    >
-   >설치 관리자를 실행하기 전에 항상 DocumentSecurityExtensionforMicrosoftOffice.msi 파일을 닫으십시오. Orca가 MSI 파일을 사용하는 경우 설치 관리자 실행할 수 없습니다.
+   >설치 관리자를 실행하기 전에 항상 DocumentSecurityExtensionforMicrosoftOffice.msi 파일을 닫으십시오. Orca가 MSI 파일을 사용하는 경우 설치 관리자를 실행할 수 없습니다.
 
 ### MSI 파일 생성 및 구성 {#create-and-configure-the-msi-file}
 
@@ -189,7 +192,7 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
 다음 옵션 중 하나를 지정할 수 있습니다.
 
 * 기본 정책으로 모든 문서를 보호합니다.
-* 사용자가 서버에 연결할 수 없는 경우 사용자가 선택적으로 보호되지 않는 형식으로 파일을 저장할 수 있도록 허용합니다. 이러한 유연성 덕분에 사용자가 네트워크 연결이 끊어진 상태(예: 비행기 탑승 중)에서 문서를 만드는 경우를 고려할 수 있습니다.
+* 사용자가 서버에 연결할 수 없는 경우 선택적으로 보호되지 않는 형식으로 파일을 저장할 수 있도록 허용합니다. 이러한 유연성 덕분에 사용자가 네트워크 연결이 끊어진 상태(예: 비행기 탑승 중)에서 문서를 만드는 경우를 고려할 수 있습니다.
 
 자동 적용된 정책 기능을 활성화하면 다음과 같은 경우 문서가 기본 정책으로 보호됩니다.
 
@@ -209,44 +212,44 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
 
 1. Rights Management 또는 Document Security의 엔터프라이즈 설치에 적용할 수 있는 다음 키 이름 값을 편집합니다.
 
-<table>
- <tbody>
-  <tr>
-   <td><p><strong>키 이름</strong></p> </td>
-   <td><p><strong>설명</strong></p> </td>
-   <td><p><strong></strong><strong>키</strong><strong> 값 기본값</strong></p> </td>
-  </tr>
-  <tr>
-   <td><p><code>AUTO_APPLY_POLICY_IS_AUTO_ APPLY</code></p> </td>
-   <td><p>자동 적용 정책 기능을 활성화하거나 비활성화합니다.</p> <p><code>1</code>: 사용</p> <p>0: 비활성화</p> </td>
-   <td><p>0</p> </td>
-  </tr>
-  <tr>
-   <td><p><code>AUTO_APPLY_POLICY_POLICY_I D</code></p> </td>
-   <td><p>새 문서를 저장할 때 사용할 정책 GUID입니다. 이 값은 자동 적용 정책 기능에 적용됩니다.</p> </td>
-   <td><p>RM 서버에 표시되는 16진수 정책 ID</p> </td>
-  </tr>
-  <tr>
-   <td><p><code>AUTO_APPLY_POLICY_SERVER_U RL</code></p> </td>
-   <td><p>서버 URL</p> </td>
-   <td><p>default.corp.com</p> </td>
-  </tr>
-  <tr>
-   <td><p><code>AUTO_APPLY_POLICY_SERVER_P ORT_NO</code></p> </td>
-   <td><p>서버 포트 번호</p> </td>
-   <td><p>1234</p> </td>
-  </tr>
-  <tr>
-   <td><p><code>AUTO_APPLY_POLICY_ALLOW_UN PROTECTED_SAVE</code></p> </td>
-   <td><p>클라이언트가 처음 저장할 때 문서를 보호하기 위해 서버에 접속할 수 없는 경우 Document Security 보호 없이 문서를 작성할 수 있는지 여부를 결정합니다.</p> <p>1: 보호되지 않은 저장 허용 </p> <p>0: 클라이언트가 문서를 저장하기 위해 서버에 접속할 수 없는 경우 새 문서 생성을 방지합니다.</p> </td>
-   <td><p>0</p> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><p><strong>키 이름</strong></p> </td>
+      <td><p><strong>설명</strong></p> </td>
+      <td><p><strong></strong><strong>키</strong><strong> 값 기본값</strong></p> </td>
+   </tr>
+   <tr>
+      <td><p><code>AUTO_APPLY_POLICY_IS_AUTO_ APPLY</code></p> </td>
+      <td><p>자동 적용 정책 기능을 활성화하거나 비활성화합니다.</p> <p><code>1</code>: 사용</p> <p>0: 비활성화</p> </td>
+      <td><p>0</p> </td>
+   </tr>
+   <tr>
+      <td><p><code>AUTO_APPLY_POLICY_POLICY_I D</code></p> </td>
+      <td><p>새 문서를 저장할 때 사용할 정책 GUID입니다. 이 값은 자동 적용 정책 기능에 적용됩니다.</p> </td>
+      <td><p>RM 서버에 표시되는 16진수 정책 ID</p> </td>
+   </tr>
+   <tr>
+      <td><p><code>AUTO_APPLY_POLICY_SERVER_U RL</code></p> </td>
+      <td><p>서버 URL</p> </td>
+      <td><p>default.corp.com</p> </td>
+   </tr>
+   <tr>
+      <td><p><code>AUTO_APPLY_POLICY_SERVER_P ORT_NO</code></p> </td>
+      <td><p>서버 포트 번호</p> </td>
+      <td><p>1234</p> </td>
+   </tr>
+   <tr>
+      <td><p><code>AUTO_APPLY_POLICY_ALLOW_UN PROTECTED_SAVE</code></p> </td>
+      <td><p>클라이언트가 처음 저장할 때 문서를 보호하기 위해 서버에 접속할 수 없는 경우 Document Security 보호 없이 문서를 작성할 수 있는지 여부를 결정합니다.</p> <p>1: 보호되지 않은 저장 허용 </p> <p>0: 클라이언트가 문서를 저장하기 위해 서버에 접속할 수 없는 경우 새 문서 생성을 방지합니다.</p> </td>
+      <td><p>0</p> </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->`AUTO_APPLY_POLICY_ALLOW_UN PROTECTED_SAVE` 옵션은 고객에게 강제하지 않고 모든 문서를 보호하도록 상기시키려는 경우에 유용합니다. 사용자가 네트워크 연결이 끊어진 상태에서 문서를 작성한다는 사실을 알고 있는 경우에도 유용합니다. 문서 작성과 저장 기능은 계속 유지됩니다.
+   >[!NOTE]
+   >
+   >`AUTO_APPLY_POLICY_ALLOW_UN PROTECTED_SAVE` 옵션은 고객에게 강제하지 않고 모든 문서를 보호하도록 상기시키려는 경우에 유용합니다. 사용자가 네트워크 연결이 끊어진 상태에서 문서를 작성한다는 사실을 알고 있는 경우에도 유용합니다. 문서를 작성하고 저장하지 못하게 하고 싶지는 않을 것입니다.
 
 1. 수정된 파일을 원래 MSI 파일이 포함된 동일한 디렉터리에 저장합니다.
 
@@ -300,11 +303,11 @@ Windows 레지스트리에서 설정을 수정하여 리본 없는 사용자 인
 
 * CommonResources.dll 파일을 백업하십시오. 기본 경로는 다음과 같습니다.
 
-   * **(32비트 컴퓨터의 32비트 Office의 경우)** C:\Program Files\Adobe\Adobe Experience Manager Forms\Document Security Extension
+  * **(32비트 컴퓨터의 32비트 Office의 경우)** C:\Program Files\Adobe\Adobe Experience Manager Forms\Document Security Extension
 
-   * **(64비트 컴퓨터의 32비트 Office의 경우)** C:\Program Files (x86)\Adobe\Adobe Experience Manager Forms\Document Security Extension
+  * **(64비트 컴퓨터의 32비트 Office의 경우)** C:\Program Files (x86)\Adobe\Adobe Experience Manager Forms\Document Security Extension
 
-   * **64비트 컴퓨터의 64비트 Office의 경우)** C:\Program Files\Adobe\Adobe Experience Manager Forms\Document Security Extension
+  * **64비트 컴퓨터의 64비트 Office의 경우)** C:\Program Files\Adobe\Adobe Experience Manager Forms\Document Security Extension
 
 * Microsoft Visual Studio 2008 이상이 설치되어 있는지 확인하십시오. 다른 유틸리티를 사용하여 DLL 파일을 편집할 수도 있습니다.
 * templates.zip 아카이브를 추출하십시오. 아카이브에는 표지용 .xlsx, .docx 및 .pptx 템플릿이 포함되어 있습니다. .xlsx, .docx 및 .pptx 파일 형식에 대해 제공된 템플릿만 사용하십시오. 다른 파일 유형을 위한 자체 템플릿을 만들 수 있습니다. 사용자 정의 메시지 및 지침을 포함하도록 템플릿을 사용자 정의합니다. 다음에서 template.zip을 찾을 수 있습니다.
@@ -367,13 +370,13 @@ CommonResources.dll 파일에는 리소스 템플릿에 대한 정보가 포함�
 
    >[!NOTE]
    >
-   >언어 설정이 올바른지 확인합니다. 중립 언어로 리소스를 삭제합니다.
+   >언어 설정이 올바른지 확인합니다. 중립 언어 리소스를 삭제합니다.
 
 1. 모든 리소스 유형에 대해 2단계와 3단계를 반복합니다.
 
    >[!NOTE]
    >
-   >임의의 순서로 리소스 유형을 삭제하고 추가하지 마십시오. 101 이후에 102를 구성하는 식입니다.
+   >리소스 유형을 삭제하거나 임의의 순서로 추가하지 마십시오. 101 이후에 102를 구성하는 식입니다.
 
 ### Microsoft Office용 AEM Document Security 확장 설치 관리자를 사용하여 사용자 정의 CommonResources.dll 파일 패키징 {#package-custom-commonresources-dll-file-with-the-installer-of-aem-document-security-extension-for-microsoft-office}
 
@@ -385,7 +388,7 @@ CommonResources.dll 파일에는 리소스 템플릿에 대한 정보가 포함�
 
 1. 자동 압축 풀기 및 패키지 도구를 설치합니다. 예를 들어, WinZip Self-Extractor입니다.
 1. 새 폴더를 만듭니다. 예: YOUR_FOLDER_NAME
-1. AEM Document Security Extension의 원래 설치 관리자의 사용자 정의 CommonResources.dll 파일을 새로 만든 폴더에 저장합니다.
+1. AEM Document Security Extension의 원래 설치 관리자와 사용자 정의 CommonResources.dll 파일을 새로 만든 폴더에 저장합니다.
 1. 폴더에 배치 파일을 만듭니다. 예: YOUR_FOLDER_NAME\Installer.bat
 1. 편집할 배치 파일을 열고 배치 파일에 다음 코드를 추가합니다.
 
